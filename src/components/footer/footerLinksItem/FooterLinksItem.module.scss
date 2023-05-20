@@ -1,0 +1,33 @@
+@import "/src/styles/vars";
+@import "/src/styles/fonts.scss";
+
+.main{
+
+}
+.title{
+  margin-bottom: 32px;
+  font-family: "CircularStd", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  & > a {
+    font-family: 'CircularStd', sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    color: $default-color;
+    opacity: 0.6;
+  }
+  & > a:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

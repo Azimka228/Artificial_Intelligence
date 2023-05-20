@@ -2,6 +2,19 @@
   padding: 30px;
   background: #18202C;
   border-radius: 10px;
+  max-width: 360px;
+  max-height: max-content;
+}
+
+.photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 103px;
+  & > img {
+    max-height: 103px;
+    max-width: 103px;
+  }
 }
 
 .title{

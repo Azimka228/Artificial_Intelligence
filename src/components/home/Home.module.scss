@@ -11,23 +11,62 @@
   max-width: 604px;
 }
 
-.rocketLogo {
+.homeWrapper {
+  position: relative;
+}
+
+
+.photo {
   position: absolute;
-  top: 49px;
-  right: 10%;
+  top: -111px;
+  right: -183px;
+  @media only screen and (min-width: 1436px) and (max-width: 1520px) {
+    & {
+      right: -143px;
+    }
+  }
+
+  @media only screen and (min-width: 1336px) and (max-width: 1436px) {
+    & {
+      right: -103px;
+    }
+  }
+  @media only screen and (min-width: 1236px) and (max-width: 1336px) {
+    & {
+      right: -43px;
+    }
+  }
+  @media only screen and (min-width: 0px) and (max-width: 1236px) {
+    & {
+      right: 0;
+    }
+  }
 }
 
 .logoCompany {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .btns {
   position: relative;
+  display: flex;
+
+  & > button > p {
+    display: flex;
+    align-items: center;
+  }
+
+  & > button > p > img {
+    margin-right: 10px;
+  }
+
   & > button:not(:last-child) {
     margin-right: 20px;
   }
+
   margin-bottom: 200px;
 }
 

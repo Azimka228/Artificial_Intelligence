@@ -1,0 +1,45 @@
+.main{
+  max-width: 260px;
+}
+
+.select{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 120px;
+}
+
+.title{
+  font-family: "CircularStd", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 32px;
+  margin-top: 20px;
+}
+
+.description{
+  font-family: "CircularStd", sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+.site{
+  font-family: "CircularStd", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 21px;
+}
+.socialNetworks{
+  display: flex;
+  margin-bottom: 53px;
+  & > a:not(:last-child) {
+    margin-right: 25px;
+  }
+}

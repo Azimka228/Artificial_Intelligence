@@ -1,5 +1,7 @@
 .swiper-slide{
     background: unset;
+    max-height: max-content;
+    max-width: 360px;
 }
 .swiper-pagination{
     margin-top: 50px;

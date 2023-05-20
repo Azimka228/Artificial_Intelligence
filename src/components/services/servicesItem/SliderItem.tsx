@@ -1,13 +1,13 @@
-import React from "react";
+import React, {FC} from "react";
 import styles from "./SliderItem.module.scss"
+import {ServicesData} from "../ServicesData";
 
-const SliderItem = () => {
+const SliderItem:FC<ServicesData> = ({url,description,title}) => {
 	return (
 		<div className={styles.main}>
-			<div><img src="" alt=""/></div>
-			<div className={styles.title}>Business Prespective Global Agency Awards</div>
-			<div className={styles.description}>Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and
-				visual mockups.
+			<div className={styles.photo}><img src={url} alt="img"/></div>
+			<div className={styles.title}>{title}</div>
+			<div className={styles.description}>{description}
 			</div>
 		</div>
 	);

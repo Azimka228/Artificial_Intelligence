@@ -1,14 +1,30 @@
 import React from "react";
 import Wrapper from "../wrapper/Wrapper";
+import styles from "./Blog.module.scss";
+import phoneLogo from "./phone.svg";
 
 const Blog = () => {
 	return (
-		<section id="blog">
-			<Wrapper>
-				Blog
-
-				<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum delectus harum illum nisi nobis perspiciatis quibusdam recusandae, similique vel voluptatum. Accusamus asperiores consectetur corporis culpa distinctio labore odit perspiciatis ut.</span><span>Accusantium aliquid aut dolor dolore ducimus, enim est eum excepturi harum illo illum iusto magnam minus nemo nulla omnis porro quae quas repudiandae sapiente sit tempora vel veritatis voluptatibus voluptatum.</span><span>A accusamus accusantium aspernatur cum excepturi, facilis molestiae natus numquam officiis praesentium, quas quod ratione sed, ullam veniam? Quidem, quis quod. Possimus quis, voluptates. Aliquid beatae expedita explicabo molestias sequi.</span><span>Atque blanditiis doloremque itaque qui repellat! Assumenda aut cum earum ex labore libero veritatis voluptatem. A blanditiis distinctio dolore esse incidunt laboriosam laborum molestias, odio odit quas repudiandae sequi voluptatem!</span><span>Adipisci distinctio fuga fugit illum iste iure laudantium maxime, nam nesciunt non, numquam odio officia perspiciatis porro quia temporibus voluptas voluptatum? Deserunt dolore itaque libero nemo porro rem tempora temporibus.</span><span>Commodi consequuntur deleniti deserunt doloremque eaque eos ipsa iusto molestias, nobis odit qui quos recusandae similique sint sunt ut vitae voluptate voluptatibus! At, beatae cum fugiat libero nulla quos repellendus.</span><span>Alias facere molestiae necessitatibus officia. Aperiam beatae consectetur consequuntur, distinctio explicabo hic ipsam labore laboriosam mollitia nam neque, nihil optio praesentium qui quis quos rem repellat sit totam unde voluptatibus.</span><span>Adipisci aspernatur assumenda at consectetur consequatur culpa dicta enim nemo nostrum optio, pariatur quaerat, quo rerum sint sunt. Ab enim expedita laboriosam modi natus nulla numquam officia tempora tenetur voluptatum?</span><span>Adipisci aliquam amet, architecto autem blanditiis delectus deserunt ea eaque enim expedita fugiat, hic impedit laborum libero maiores maxime molestiae necessitatibus nesciunt perspiciatis quidem, quis rerum velit veniam vero vitae?</span><span>Ab adipisci beatae consequatur corporis cum delectus eaque eius eligendi, et, fuga harum impedit ipsam maiores, nesciunt sapiente ullam unde? Aperiam consectetur culpa cum incidunt nesciunt nulla odio quas soluta.</span>
-				</p>
+		<section id="blog" className={styles.main}>
+			<Wrapper className={styles.blogWrapper}>
+				<img src={phoneLogo} alt="rocketLogo" className={styles.photo}/>
+				<div className={styles.content}>
+					<div className={styles.title}>What our clients say about our awesome solutions</div>
+					<div className={styles.textContent}>
+						<div className={styles.textContent__item}>
+							To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it who do not know.
+						</div>
+						<div className={styles.textContent__item}>
+							Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing .
+						</div>
+						<div className={styles.textContent__item}>
+							Lorem ipsum is placeholder previewing layouts and visual mockups.
+						</div>
+						<div className={styles.textContent__item}>
+							Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+						</div>
+					</div>
+				</div>
 			</Wrapper>
 		</section>
 	);

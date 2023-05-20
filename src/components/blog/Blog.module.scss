@@ -1,0 +1,42 @@
+.blogWrapper {
+  position: relative;
+}
+
+.photo {
+  position: absolute;
+  right: 0;
+  top: -44px;
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  max-width: 548px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.textContent {
+  position: relative;
+  z-index: 2;
+  max-width: 460px;
+  &__item {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    opacity: 0.7;
+  }
+  & > &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.main {
+  padding: 214px 0 214px 0;
+}

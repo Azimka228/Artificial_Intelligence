@@ -1,0 +1,49 @@
+@import "/src/styles/vars";
+@import "/src/styles/fonts.scss";
+
+.logo {
+  position: absolute;
+  top: -18px;
+}
+
+.main {
+  max-width: 260px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    display: flex;
+    align-items: center;
+  }
+
+  & > div > img {
+    margin-right: 9px;
+  }
+
+  & > div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.label {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.9627px;
+  line-height: 22px;
+  color: $blue-color;
+  margin-top: 44px;
+}
+
+.description {
+  font-family: 'CircularStd', sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.6;
+  margin: 10px 0 37px 0;
+}

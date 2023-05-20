@@ -1,21 +1,36 @@
 import React from "react";
 import {Pagination} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
-import styles from './Services.module.scss'
-import './swiper.css'
+import styles from "./Services.module.scss"
+import "./swiper.css"
 import SliderItem from "./servicesItem/SliderItem";
+import {ServicesData} from "./ServicesData";
 
+const breakpointsSlider = {
+	320: {
+		slidesPerView: 2,
+		spaceBetween: 20
+	},
+	// when window width is >= 480px
+	1200: {
+		slidesPerView: 3,
+		spaceBetween: 30
+	},
+	// when window width is >= 640px
+	1854: {
+		slidesPerView: 4,
+		spaceBetween: 40
+	}
+}
 const Services = () => {
+	const mappedSlides = ServicesData.map((el,id) => <SwiperSlide key={id}><SliderItem {...el}/></SwiperSlide>)
+
 	return (
-		<section className={styles.main} id='services'>
-			<Swiper slidesPerView={5} spaceBetween={50}pagination={true} modules={[Pagination]} className="mySwiper">
-				<SwiperSlide><SliderItem/></SwiperSlide>
-				<SwiperSlide><SliderItem/></SwiperSlide>
-				<SwiperSlide><SliderItem/></SwiperSlide>
-				<SwiperSlide><SliderItem/></SwiperSlide>
-				<SwiperSlide><SliderItem/></SwiperSlide>
-				<SwiperSlide><SliderItem/></SwiperSlide>
-				<SwiperSlide><SliderItem/></SwiperSlide>
+		<section className={styles.main} id="services">
+			<Swiper slidesPerView={5} spaceBetween={30} pagination={true} modules={[Pagination]}
+											breakpoints={breakpointsSlider}
+											className="mySwiper">
+				{mappedSlides}
 			</Swiper>
 		</section>
 	);
