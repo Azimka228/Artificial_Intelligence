@@ -1,0 +1,66 @@
+@import "/src/styles/vars";
+
+.main {
+  position: relative;
+  background-color: #08101E;
+  padding: 160px 0 100px 0;
+
+}
+
+.content {
+  max-width: 604px;
+}
+
+.rocketLogo {
+  position: absolute;
+  top: 49px;
+  right: 10%;
+}
+
+.logoCompany {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btns {
+  position: relative;
+  & > button:not(:last-child) {
+    margin-right: 20px;
+  }
+  margin-bottom: 200px;
+}
+
+.label {
+  position: relative;
+  color: $blue-color;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+
+.title {
+  color: $default-color;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 130%;
+  margin: 10px 0 40px 0;
+  position: relative;
+}
+
+.description {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  color: $default-color;
+  opacity: 0.7;
+  margin-bottom: 50px;
+}

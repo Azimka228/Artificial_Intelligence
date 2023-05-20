@@ -1,0 +1,10 @@
+.main {
+  min-height: 454px;
+  padding: 80px 0 0 0;
+  & > div {
+    height: 100%;
+  }
+  & > .swiper {
+    display: flex;
+  }
+}

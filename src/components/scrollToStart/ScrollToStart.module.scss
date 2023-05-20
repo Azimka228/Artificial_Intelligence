@@ -1,0 +1,9 @@
+@import "/src/styles/vars";
+.main{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: white;
+  color: $default-color;
+  z-index: 100;
+}

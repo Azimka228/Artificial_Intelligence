@@ -1,0 +1,32 @@
+@import '/src/styles/vars';
+
+.main{
+  padding: 15px 30px 15px 30px;
+  background-color: $blue-color;
+  border-radius: 5px;
+  color: #FFFFFF;
+  border: unset;
+  cursor: pointer;
+  & > .bigText {
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+
+  }
+  & > .defaultText {
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+  }
+}
+.defaultButton{
+  height: 52px;
+}
+.bigButton {
+  height: 57px;
+}

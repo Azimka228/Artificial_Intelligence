@@ -1,0 +1,21 @@
+.swiper-slide{
+    background: unset;
+}
+.swiper-pagination{
+    margin-top: 50px;
+    position: unset;
+}
+.swiper-pagination-bullet{
+    height: 15px;
+    width: 15px;
+    background: #2C3647;
+    opacity: 0.5;
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+}
+.swiper-pagination-bullet-active{
+    background: #2C3647;
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+    opacity: unset;
+}

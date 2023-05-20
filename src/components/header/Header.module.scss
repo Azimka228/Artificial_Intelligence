@@ -1,0 +1,33 @@
+@import "/src/styles/vars";
+
+.main {
+  background-color: #0B131F;
+}
+
+.headerWrapper {
+  padding: 21px 0 22px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 84px;
+  & > p {
+    margin-left: 15px;
+    font-family: 'Open Sans', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.5455px;
+    line-height: 31px;
+    color: $blue-color;
+  }
+
+}

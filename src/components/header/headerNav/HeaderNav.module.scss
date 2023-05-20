@@ -1,0 +1,12 @@
+@import "/src/styles/vars";
+
+.main{
+  display: flex;
+  & > a {
+    color: $default-color;
+    text-decoration: none;
+  }
+  & > a:not(:last-child) {
+    margin-right: 40px;
+  }
+}
