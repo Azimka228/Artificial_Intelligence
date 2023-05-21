@@ -1,48 +1,45 @@
 .main{
-  padding: 30px;
-  background: #18202C;
-  border-radius: 10px;
   max-width: 360px;
   max-height: max-content;
+  padding: 30px;
+
+  background: #18202C;
+  border-radius: 10px;
 }
 
 .photo{
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 103px;
   & > img {
-    max-height: 103px;
     max-width: 103px;
+    max-height: 103px;
   }
 }
 
 .title{
-  font-family: 'Open Sans',serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 125%;
+  margin: 30px 0 30px 0 ;
 
+  font-family: 'Open Sans',serif;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 125%;
+  color: #FFFFFF;
   text-align: center;
 
-  color: #FFFFFF;
-
   opacity: 0.7;
-  margin: 30px 0 30px 0 ;
 }
 
 .description{
   font-family: 'Open Sans',serif;
-  font-style: normal;
-  font-weight: 600;
   font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
   line-height: 160%;
-
-  text-align: center;
-
-
   color: #FFFFFF;
+  text-align: center;
 
   opacity: 0.7;
 }

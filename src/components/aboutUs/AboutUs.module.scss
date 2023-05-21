@@ -1,6 +1,6 @@
 .main {
-  padding: 77px 0 85px 0;
   position: relative;
+  padding: 77px 0 85px 0;
 
 }
 
@@ -8,16 +8,19 @@
   position: absolute;
   top: 0;
   left: -137px;
+
   @media only screen and (min-width: 1330px) and (max-width: 1430px) {
     & {
       left: -90px;
     }
   }
+
   @media only screen and (min-width: 1330px) and (max-width: 1330px) {
     & {
       left: -40px;
     }
   }
+
   @media only screen and (min-width: 1230px) and (max-width: 1330px) {
     & {
       left: 0;
@@ -30,32 +33,37 @@
 }
 
 .aboutUsWrapper {
+  position: relative;
   display: flex;
   justify-content: end;
-  position: relative;
 }
 
 .title {
   position: relative;
   z-index: 2;
-  font-family: 'Open Sans',sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 130%;
+
   margin-top: 178px;
+
+  font-family: 'Open Sans',sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 130%;
 }
 
 .description {
   position: relative;
   z-index: 2;
-  font-family: 'Open Sans',sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 160%;
-  opacity: 0.7;
+
   margin: 35px 0 60px 0;
+
+  font-family: 'Open Sans',sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 160%;
+
+  opacity: 0.7;
 }
 .btns {
   position: relative;

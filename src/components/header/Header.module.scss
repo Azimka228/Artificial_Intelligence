@@ -5,9 +5,9 @@
 }
 
 .headerWrapper {
-  padding: 21px 0 22px 0;
   display: flex;
   justify-content: space-between;
+  padding: 21px 0 22px 0;
 }
 
 .links {
@@ -22,10 +22,11 @@
   margin-right: 84px;
   & > p {
     margin-left: 15px;
+
     font-family: 'Open Sans', serif;
-    font-style: normal;
-    font-weight: 600;
     font-size: 22.5455px;
+    font-weight: 600;
+    font-style: normal;
     line-height: 31px;
     color: $blue-color;
   }

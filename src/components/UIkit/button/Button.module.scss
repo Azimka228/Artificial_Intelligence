@@ -1,25 +1,28 @@
 @import '/src/styles/vars';
 
 .main{
-  padding: 15px 30px 15px 30px;
-  background-color: $blue-color;
-  border-radius: 5px;
-  color: #FFFFFF;
-  border: unset;
   cursor: pointer;
+
+  padding: 15px 30px 15px 30px;
+
+  color: #FFFFFF;
+
+  background-color: $blue-color;
+  border: unset;
+  border-radius: 5px;
   & > .bigText {
     font-family: 'Open Sans',sans-serif;
-    font-style: normal;
-    font-weight: 600;
     font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
     line-height: 27px;
 
   }
   & > .defaultText {
     font-family: 'Open Sans',sans-serif;
-    font-style: normal;
-    font-weight: 600;
     font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
     line-height: 22px;
 
   }

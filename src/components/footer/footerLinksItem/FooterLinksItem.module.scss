@@ -5,13 +5,14 @@
 
 }
 .title{
-  margin-bottom: 32px;
-  font-family: "CircularStd", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
   margin-top: 20px;
+  margin-bottom: 32px;
+
+  font-family: "CircularStd", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 20px;
 }
 
 .links{
@@ -19,12 +20,13 @@
   flex-direction: column;
   & > a {
     font-family: 'CircularStd', sans-serif;
-    font-style: normal;
-    font-weight: 450;
     font-size: 14px;
+    font-weight: 450;
+    font-style: normal;
     line-height: 18px;
-    text-decoration: none;
     color: $default-color;
+    text-decoration: none;
+
     opacity: 0.6;
   }
   & > a:not(:last-child) {

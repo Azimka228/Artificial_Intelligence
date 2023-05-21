@@ -2,15 +2,31 @@
   "name": "artificial-intelligence",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://Azimka228.github.io/Artificial_Intelligence",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "prepare": "husky install",
+    "lint-fix": "eslint --fix",
+    "stylelint-fix": "stylelint \"**/*.scss\" --fix"
+  },
+  "lint-staged": {
+    "**/*.scss": [
+      "stylelint --fix"
+    ],
+    "**/*.{js,ts,jsx,tsx}": [
+      "npm run lint-fix",
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "classnames": "^2.3.2",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.62.1",
@@ -27,6 +43,17 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
     "typescript": "^5.0.2",
-    "vite": "^4.3.2"
+    "vite": "^4.3.2",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.0",
+    "prettier": "^2.8.3",
+    "stylelint": "^14.16.1",
+    "stylelint-config-clean-order": "^2.3.1",
+    "stylelint-config-prettier": "^9.0.4"
   }
 }

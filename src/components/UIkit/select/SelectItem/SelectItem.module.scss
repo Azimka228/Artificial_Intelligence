@@ -1,24 +1,24 @@
 @import "/src/styles/vars.scss";
 
 .main {
-    cursor: pointer;
-    padding: 24px;
-    word-break: break-word;
+  cursor: pointer;
+  padding: 24px;
+  word-break: break-word;
 }
 
 .main_hover {
-    cursor: pointer;
+  cursor: pointer;
 
-    padding: 24px;
+  padding: 24px;
 
-    color: white;
-    word-break: break-word;
+  color: white;
+  word-break: break-word;
 
-    background-color: $blue-color;
-    opacity: 0.7;
+  opacity: 0.7;
+  background-color: $blue-color;
 }
 
 .item_selected {
-    color: white;
-    background-color: $blue-color;
+  color: white;
+  background-color: $blue-color;
 }

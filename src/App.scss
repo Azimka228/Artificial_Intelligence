@@ -7,10 +7,10 @@ p {
 }
 html,
 body {
+  scroll-behavior: smooth;
   position: relative;
   height: 100%;
   color: $default-color;
-  scroll-behavior: smooth;
 }
 
 #root{
@@ -18,10 +18,12 @@ body {
 }
 
 body {
-  background: #020A18;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  height: 100%;
   margin: 0;
   padding: 0;
-  height: 100%;
+
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+
+  background: #020A18;
 }

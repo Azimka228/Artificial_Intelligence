@@ -2,8 +2,8 @@
 
 .main {
   position: relative;
-  background-color: #08101E;
   padding: 160px 0 100px 0;
+  background-color: #08101E;
 
 }
 
@@ -20,6 +20,7 @@
   position: absolute;
   top: -111px;
   right: -183px;
+
   @media only screen and (min-width: 1436px) and (max-width: 1520px) {
     & {
       right: -143px;
@@ -31,11 +32,13 @@
       right: -103px;
     }
   }
+
   @media only screen and (min-width: 1236px) and (max-width: 1336px) {
     & {
       right: -43px;
     }
   }
+
   @media only screen and (min-width: 0px) and (max-width: 1236px) {
     & {
       right: 0;
@@ -45,14 +48,15 @@
 
 .logoCompany {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .btns {
   position: relative;
   display: flex;
+  margin-bottom: 200px;
 
   & > button > p {
     display: flex;
@@ -66,40 +70,44 @@
   & > button:not(:last-child) {
     margin-right: 20px;
   }
-
-  margin-bottom: 200px;
 }
 
 .label {
   position: relative;
-  color: $blue-color;
+
   font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
   font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
   line-height: 160%;
+  color: $blue-color;
   text-transform: uppercase;
 }
 
 .title {
-  color: $default-color;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 55px;
-  line-height: 130%;
-  margin: 10px 0 40px 0;
   position: relative;
+
+  margin: 10px 0 40px 0;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 55px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 130%;
+  color: $default-color;
 }
 
 .description {
   position: relative;
+
+  margin-bottom: 50px;
+
   font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
   font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
   line-height: 160%;
   color: $default-color;
+
   opacity: 0.7;
-  margin-bottom: 50px;
 }

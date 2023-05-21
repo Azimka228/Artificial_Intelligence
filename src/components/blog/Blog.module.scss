@@ -4,20 +4,22 @@
 
 .photo {
   position: absolute;
-  right: 0;
   top: -44px;
+  right: 0;
 }
 
 .title {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 130%;
-  max-width: 548px;
-  margin-bottom: 40px;
   position: relative;
   z-index: 2;
+
+  max-width: 548px;
+  margin-bottom: 40px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 130%;
 }
 
 .textContent {
@@ -26,10 +28,11 @@
   max-width: 460px;
   &__item {
     font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 600;
     font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
     line-height: 160%;
+
     opacity: 0.7;
   }
   & > &__item:not(:last-child) {

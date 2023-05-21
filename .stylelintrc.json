@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "stylelint-config-prettier",
+    "stylelint-config-clean-order"
+  ],
+  "rules": {
+    "indentation": 2,
+    "color-hex-case": "upper",
+    "selector-class-pattern": "^([a-z][a-z0-9]*)(_[a-z0-9]+)*$"
+  }
+}
