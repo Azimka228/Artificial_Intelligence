@@ -1,19 +1,22 @@
-import {FC} from "react";
-import {FooterLinksDataItem} from "../FooterLinksData";
-import styles from './FooterLinksItem.module.scss'
+import { FC } from 'react';
 
-const FooterLinksItem: FC<FooterLinksDataItem> = ({title, links}) => {
-	const mappedLinks = links.map((el,index) => <a key={index} href={el.url}>{el.name}</a>)
+import { FooterLinksDataItem } from '../FooterLinksData';
 
-	return (
-		<div className={styles.main}>
-			<div className={styles.title}>{title}</div>
-			<div className={styles.links}>
-				{mappedLinks}
-			</div>
+import styles from './FooterLinksItem.module.scss';
 
-		</div>
-	);
+const FooterLinksItem: FC<FooterLinksDataItem> = ({ title, links }) => {
+  const mappedLinks = links.map((el, index) => (
+    <a key={index} href={el.url}>
+      {el.name}
+    </a>
+  ));
+
+  return (
+    <div className={styles.main}>
+      <div className={styles.title}>{title}</div>
+      <div className={styles.links}>{mappedLinks}</div>
+    </div>
+  );
 };
 
 export default FooterLinksItem;

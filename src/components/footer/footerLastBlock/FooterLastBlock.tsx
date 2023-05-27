@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import { IOption, Select } from '../../UIkit/select/Select';
 import facebookLogo from '../assets/facebook.svg';
@@ -18,7 +18,7 @@ const LANGUAGE_DATA: IOption[] = [
   { label: 'English', value: 'usd' },
 ];
 
-const FooterLastBlock = () => {
+const FooterLastBlock: FC = () => {
   return (
     <div className={styles.main}>
       <div className={styles.title}>ABOUT THE STORE</div>

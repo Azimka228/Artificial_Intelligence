@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import Button from '../UIkit/button/Button';
 import Wrapper from '../wrapper/Wrapper';
@@ -11,7 +11,7 @@ import secondCompany from './assets/secondCompany.svg';
 import thirdCompany from './assets/thirdCompany.svg';
 import styles from './Home.module.scss';
 
-const Home = (): JSX.Element => {
+const Home: FC = () => {
   return (
     <section id="home" className={styles.main}>
       <Wrapper className={styles.homeWrapper}>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -24,7 +24,7 @@ const breakpointsSlider = {
     spaceBetween: 40,
   },
 };
-const Services = (): JSX.Element => {
+const Services: FC = () => {
   const mappedSlides = ServicesData.map((el, id) => (
     <SwiperSlide key={id}>
       <SliderItem {...el} />

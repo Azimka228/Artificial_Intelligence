@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import siteLogo from '../../assets/logo.svg';
 import Button from '../UIkit/button/Button';
@@ -7,7 +7,7 @@ import Wrapper from '../wrapper/Wrapper';
 import styles from './Header.module.scss';
 import HeaderNav from './headerNav/HeaderNav';
 
-const Header = (): JSX.Element => {
+const Header: FC = () => {
   return (
     <header id="header" className={styles.main}>
       <Wrapper className={styles.headerWrapper}>
