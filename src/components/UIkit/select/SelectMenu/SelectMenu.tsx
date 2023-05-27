@@ -1,4 +1,4 @@
-import React, { CSSProperties, FC, ReactNode, useEffect, useRef } from 'react';
+import React, { FC, ReactNode, useRef } from 'react';
 
 import cn from 'classnames';
 
@@ -7,27 +7,19 @@ import styles from './SelectMenu.module.scss';
 interface ISelectMenuPropsType {
   isOpen: boolean;
   children: ReactNode;
-  height?: string;
+  height: string;
   className?: string;
-  style?: CSSProperties;
-  onChangeHeight: (height: number) => void;
 }
 
 const SelectMenu: FC<ISelectMenuPropsType> = ({
   children,
   isOpen,
-  height,
   className,
-  style,
-  onChangeHeight,
+  height,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    if (ref.current) onChangeHeight(ref.current.clientHeight);
-  }, [onChangeHeight]);
-
-  const inlineStyles = height ? { maxHeight: height, ...style } : { ...style };
+  const inlineStyles = { maxHeight: height };
 
   if (!isOpen) return null;
 

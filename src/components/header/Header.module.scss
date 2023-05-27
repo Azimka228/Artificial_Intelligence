@@ -2,33 +2,33 @@
 
 .main {
   background-color: #0B131F;
-}
 
-.headerWrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: 21px 0 22px 0;
-}
+  > .headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 0 22px 0;
 
-.links {
-  display: flex;
-  align-items: center;
+    > .links {
+      display: flex;
+      align-items: center;
 
-}
+      .logo {
+        display: flex;
+        align-items: center;
+        margin-right: 84px;
 
-.logo {
-  display: flex;
-  align-items: center;
-  margin-right: 84px;
-  & > p {
-    margin-left: 15px;
-
-    font-family: 'Open Sans', serif;
-    font-size: 22.5455px;
-    font-weight: 600;
-    font-style: normal;
-    line-height: 31px;
-    color: $blue-color;
+        > .title {
+          margin-left: 15px;
+          font-family: 'Open Sans', serif;
+          font-size: 22.5455px;
+          font-weight: 600;
+          font-style: normal;
+          line-height: 31px;
+          color: $blue-color;
+        }
+      }
+    }
   }
-
 }
+
+

@@ -1,21 +1,31 @@
-import {ButtonHTMLAttributes, DetailedHTMLProps, FC, ReactNode} from "react";
-import styles from "./Button.module.scss"
+import { ButtonHTMLAttributes, DetailedHTMLProps, FC, ReactNode } from 'react';
+
+import cn from 'classnames';
+
+import styles from './Button.module.scss';
 
 export interface IButtonProps
-	extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
-	children?:ReactNode
-	variant?: 'default' | 'big'
+  extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
+  children?: ReactNode;
+  variant?: 'default' | 'big';
 }
 
-const Button:FC<IButtonProps> = ({variant = 'default',children,...restProps}) => {
-	const textClassName = variant === 'default' ? styles.defaultText : styles.bigText
-	const ButtonClassName = variant === 'default' ? styles.defaultButton : styles.bigButton
+const Button: FC<IButtonProps> = ({ variant = 'default', children, ...restProps }) => {
+  const textClassName = cn({
+    [styles.defaultText]: variant === 'default',
+    [styles.bigText]: variant === 'big',
+  });
 
-	return (
-		<button className={`${styles.main} ${ButtonClassName}`} {...restProps}>
-			<p className={textClassName}>			{children}</p>
-		</button>
-	);
+  const buttonClassName = cn(styles.main, {
+    [styles.defaultButton]: variant === 'default',
+    [styles.bigButton]: variant === 'big',
+  });
+
+  return (
+    <button className={buttonClassName} {...restProps} type="button">
+      <p className={textClassName}> {children}</p>
+    </button>
+  );
 };
 
 export default Button;

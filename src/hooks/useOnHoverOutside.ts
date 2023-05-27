@@ -1,4 +1,4 @@
-import {RefObject, useEffect} from "react";
+import { RefObject, useEffect } from 'react';
 
 function useOnHoverOutside(ref: RefObject<any>, handler: (event: Event) => void): void {
   useEffect(() => {
