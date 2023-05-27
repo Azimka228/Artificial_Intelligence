@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 
-import Button from '../UIkit/button/Button';
-import Wrapper from '../wrapper/Wrapper';
+import Button from '../ui/button/Button';
+import { Wrapper } from '../Wrapper';
 
 import styles from './AboutUs.module.scss';
 import phoneLogo from './phone.svg';
 
-const AboutUs: FC = () => {
+export const AboutUs: FC = () => {
   return (
     <section id="about" className={styles.main}>
       <Wrapper className={styles.aboutUsWrapper}>
@@ -27,5 +27,3 @@ const AboutUs: FC = () => {
     </section>
   );
 };
-
-export default AboutUs;

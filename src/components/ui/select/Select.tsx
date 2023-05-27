@@ -43,7 +43,7 @@ export interface IOption {
 /**
  *
  * Props:
- * - To add header use --> Header={true}
+ * - To add Header use --> Header={true}
  *
  *
  */

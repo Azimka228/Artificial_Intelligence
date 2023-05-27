@@ -1,17 +1,17 @@
 import React, { FC } from 'react';
 
-import Button from '../UIkit/button/Button';
-import Wrapper from '../wrapper/Wrapper';
+import Button from '../ui/button/Button';
+import { Wrapper } from '../Wrapper';
 
-import firstCompany from './assets/firstCompany.svg';
-import fourCompany from './assets/fourCompany.svg';
-import playLogo from './assets/play.svg';
-import rocketLogo from './assets/rocket.svg';
-import secondCompany from './assets/secondCompany.svg';
-import thirdCompany from './assets/thirdCompany.svg';
+import firstCompany from './Assets/firstCompany.svg';
+import fourCompany from './Assets/fourCompany.svg';
+import playLogo from './Assets/play.svg';
+import rocketLogo from './Assets/rocket.svg';
+import secondCompany from './Assets/secondCompany.svg';
+import thirdCompany from './Assets/thirdCompany.svg';
 import styles from './Home.module.scss';
 
-const Home: FC = () => {
+export const Home: FC = () => {
   return (
     <section id="home" className={styles.main}>
       <Wrapper className={styles.homeWrapper}>
@@ -40,5 +40,3 @@ const Home: FC = () => {
     </section>
   );
 };
-
-export default Home;

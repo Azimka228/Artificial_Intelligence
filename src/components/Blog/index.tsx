@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 
-import Wrapper from '../wrapper/Wrapper';
+import { Wrapper } from '../Wrapper';
 
 import styles from './Blog.module.scss';
 import phoneLogo from './phone.svg';
 
-const Blog: FC = () => {
+export const Blog: FC = () => {
   return (
     <section id="blog" className={styles.main}>
       <Wrapper className={styles.blogWrapper}>
@@ -36,5 +36,3 @@ const Blog: FC = () => {
     </section>
   );
 };
-
-export default Blog;

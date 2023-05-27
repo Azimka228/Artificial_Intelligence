@@ -4,7 +4,7 @@ import { FooterLinksDataItem } from '../FooterLinksData';
 
 import styles from './FooterLinksItem.module.scss';
 
-const FooterLinksItem: FC<FooterLinksDataItem> = ({ title, links }) => {
+export const FooterLinksItem: FC<FooterLinksDataItem> = ({ title, links }) => {
   const mappedLinks = links.map((el, index) => (
     <a key={index} href={el.url}>
       {el.name}
@@ -18,5 +18,3 @@ const FooterLinksItem: FC<FooterLinksDataItem> = ({ title, links }) => {
     </div>
   );
 };
-
-export default FooterLinksItem;

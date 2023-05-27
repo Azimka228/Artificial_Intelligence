@@ -24,7 +24,8 @@ const breakpointsSlider = {
     spaceBetween: 40,
   },
 };
-const Services: FC = () => {
+
+export const Services: FC = () => {
   const mappedSlides = ServicesData.map((el, id) => (
     <SwiperSlide key={id}>
       <SliderItem {...el} />
@@ -46,5 +47,3 @@ const Services: FC = () => {
     </section>
   );
 };
-
-export default Services;

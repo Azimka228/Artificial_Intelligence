@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 
-import { IOption, Select } from '../../UIkit/select/Select';
-import facebookLogo from '../assets/facebook.svg';
-import instagramLogo from '../assets/instagram.svg';
-import linkedinLogo from '../assets/linkedin.svg';
-import planetLogo from '../assets/planet.svg';
-import twitterLogo from '../assets/twitter.svg';
-import youtubeLogo from '../assets/youtube.svg';
+import { IOption, Select } from '../../ui/select/Select';
+import facebookLogo from '../Assets/facebook.svg';
+import instagramLogo from '../Assets/instagram.svg';
+import linkedinLogo from '../Assets/linkedin.svg';
+import planetLogo from '../Assets/planet.svg';
+import twitterLogo from '../Assets/twitter.svg';
+import youtubeLogo from '../Assets/youtube.svg';
 
 import styles from './FooterLastBlock.module.scss';
 
@@ -18,7 +18,7 @@ const LANGUAGE_DATA: IOption[] = [
   { label: 'English', value: 'usd' },
 ];
 
-const FooterLastBlock: FC = () => {
+export const FooterLastBlock: FC = () => {
   return (
     <div className={styles.main}>
       <div className={styles.title}>ABOUT THE STORE</div>
@@ -51,5 +51,3 @@ const FooterLastBlock: FC = () => {
     </div>
   );
 };
-
-export default FooterLastBlock;

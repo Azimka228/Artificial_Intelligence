@@ -7,10 +7,8 @@ interface IWrapperProps {
   className?: string;
 }
 
-const Wrapper: FC<IWrapperProps> = ({ children, className }) => {
+export const Wrapper: FC<IWrapperProps> = ({ children, className }) => {
   const currentClassName = `${styles.main} ${className}`;
 
   return <div className={currentClassName}>{children}</div>;
 };
-
-export default Wrapper;

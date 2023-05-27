@@ -1,12 +1,12 @@
 @import "/src/styles/vars";
 
-.main{
+.main {
   display: flex;
-  & > a {
+  gap: 40px;
+
+  > .link {
     color: $default-color;
     text-decoration: none;
   }
-  & > a:not(:last-child) {
-    margin-right: 40px;
-  }
+
 }

@@ -2,7 +2,6 @@
   "name": "artificial-intelligence",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://Azimka228.github.io/Artificial_Intelligence",
   "type": "module",
   "scripts": {
     "dev": "vite",

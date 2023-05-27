@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import arrowUpLogo from './arrowUp.png';
 import styles from './ScrollToStart.module.scss';
 
-const ScrollToStart: FC = () => {
+export const ScrollToStart: FC = () => {
   return (
     <div className={styles.main}>
       <a href="#header">
@@ -12,5 +12,3 @@ const ScrollToStart: FC = () => {
     </div>
   );
 };
-
-export default ScrollToStart;

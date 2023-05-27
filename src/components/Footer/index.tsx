@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Wrapper from '../wrapper/Wrapper';
+import { Wrapper } from '../Wrapper';
 
 import styles from './Footer.module.scss';
-import FooterFirstBlock from './footerFirstBlock/FooterFirstBlock';
-import FooterLastBlock from './footerLastBlock/FooterLastBlock';
+import { FooterFirstBlock } from './FooterFirstBlock';
+import { FooterLastBlock } from './FooterLastBlock';
 import { FooterLinksData } from './FooterLinksData';
-import FooterLinksItem from './footerLinksItem/FooterLinksItem';
+import { FooterLinksItem } from './FooterLinksItem';
 
-const Footer = (): JSX.Element => {
+export const Footer = (): JSX.Element => {
   const mappedFooterLinksItems = FooterLinksData.map((el, index) => (
     <FooterLinksItem key={index} {...el} />
   ));
@@ -23,5 +23,3 @@ const Footer = (): JSX.Element => {
     </footer>
   );
 };
-
-export default Footer;
