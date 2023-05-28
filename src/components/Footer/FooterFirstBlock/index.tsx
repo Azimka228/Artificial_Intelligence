@@ -19,11 +19,16 @@ export const FooterFirstBlock: FC = () => {
       <div className={styles.cards}>
         <div className={styles.item}>
           <img src={emailLogo} alt="emailLogo" className={styles.img} />
-          Company@gmail.com.com
+          <a href="mailto:Company@gmail.com.com" className={styles.link}>
+            {' '}
+            Company@gmail.com.com
+          </a>
         </div>
         <div className={styles.item}>
           <img src={phoneLogo} alt="phoneLogo" className={styles.img} />
-          Phone: (064) 332-1233
+          <a href="tel:+0643321233" className={styles.link}>
+            Phone: (064) 332-1233
+          </a>
         </div>
         <div className={styles.item}>
           <img src={locationLogo} alt="locationLogo" className={styles.img} />
