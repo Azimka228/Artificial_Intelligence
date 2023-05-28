@@ -7,6 +7,10 @@
   > .link {
     color: $default-color;
     text-decoration: none;
+
+    &:hover {
+      border-bottom: 1px solid #3A68B8;
+    }
   }
 
   @media only screen and (min-width: 0px) and (max-width: 410px) {

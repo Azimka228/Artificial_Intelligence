@@ -107,18 +107,6 @@
 
   }
 
-  & {
-    padding-top: 80px;
-    padding-bottom: 50px;
-
-    > .homeWrapper {
-
-      > .logoCompany {
-        justify-content: center;
-      }
-    }
-  }
-
   @media only screen and (min-width: 0px) and (max-width: 1236px) {
     & {
 
@@ -172,7 +160,15 @@
   }
 
   @media only screen and (min-width: 0px) and (max-width: 562px) {
+    & {
 
+      > .homeWrapper {
+
+        > .logoCompany {
+          justify-content: center;
+        }
+      }
+    }
   }
 }
 
