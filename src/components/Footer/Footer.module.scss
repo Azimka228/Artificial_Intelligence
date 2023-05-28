@@ -1,11 +1,29 @@
-.main{
-  padding: 57px 0 146px 0;
+.main {
+  padding: 100px 0 146px 0;
   background-color: #070F1D;
-}
-.footerWrapper{
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
+
+  > .footerWrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+
+
+  }
+  @media only screen and (min-width: 0px) and (max-width: 1035px) {
+    & {
+      padding: 57px 0 57px 0;
+    }
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 521px) {
+    & {
+
+      > .footerWrapper {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
 }

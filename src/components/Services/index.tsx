@@ -9,8 +9,14 @@ import { ServicesData } from './ServicesData';
 import SliderItem from './servicesItem/SliderItem';
 
 const breakpointsSlider = {
-  320: {
-    slidesPerView: 2,
+  // when window width is >= 0px
+  0: {
+    slidesPerView: 1,
+    spaceBetween: 10,
+  },
+  // when window width is >= 757px
+  757: {
+    slidesPerView: 1,
     spaceBetween: 20,
   },
   // when window width is >= 480px

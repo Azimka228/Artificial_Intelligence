@@ -13,9 +13,6 @@ import styles from './FooterLastBlock.module.scss';
 const LANGUAGE_DATA: IOption[] = [
   { label: 'Russian', value: 'ru' },
   { label: 'English', value: 'usd' },
-  { label: 'English', value: 'usd' },
-  { label: 'English', value: 'usd' },
-  { label: 'English', value: 'usd' },
 ];
 
 export const FooterLastBlock: FC = () => {
@@ -28,19 +25,19 @@ export const FooterLastBlock: FC = () => {
       </div>
       <div className={styles.site}>www.company.com</div>
       <div className={styles.socialNetworks}>
-        <a href="#">
+        <a href="/#">
           <img src={facebookLogo} alt="facebookLogo" />
         </a>
-        <a href="#">
+        <a href="/#">
           <img src={instagramLogo} alt="instagramLogo" />
         </a>
-        <a href="#">
+        <a href="/#">
           <img src={twitterLogo} alt="twitterLogo" />
         </a>
-        <a href="#">
+        <a href="/#">
           <img src={linkedinLogo} alt="linkedinLogo" />
         </a>
-        <a href="#">
+        <a href="/#">
           <img src={youtubeLogo} alt="youtubeLogo" />
         </a>
       </div>

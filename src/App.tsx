@@ -4,28 +4,16 @@ import 'swiper/css';
 // eslint-disable-next-line import/no-unresolved
 import 'swiper/css/pagination';
 
-import {
-  AboutUs,
-  Blog,
-  Footer,
-  Header,
-  Home,
-  ScrollToStart,
-  Services,
-} from './components';
+import { AboutUs, Blog, Home, Services } from './components';
+import { DefaultLayout } from './layouts';
 
-const App = (): JSX.Element => {
+export const App = (): JSX.Element => {
   return (
-    <>
-      <Header />
+    <DefaultLayout>
       <Home />
       <AboutUs />
       <Services />
       <Blog />
-      <Footer />
-      <ScrollToStart />
-    </>
+    </DefaultLayout>
   );
 };
-
-export default App;

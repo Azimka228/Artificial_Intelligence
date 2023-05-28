@@ -16,17 +16,17 @@ export const FooterFirstBlock: FC = () => {
         Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts
         and visual mockups.
       </div>
-      <div className={styles.items}>
-        <div>
-          <img src={emailLogo} alt="emailLogo" />
+      <div className={styles.cards}>
+        <div className={styles.item}>
+          <img src={emailLogo} alt="emailLogo" className={styles.img} />
           Company@gmail.com.com
         </div>
-        <div>
-          <img src={phoneLogo} alt="phoneLogo" />
+        <div className={styles.item}>
+          <img src={phoneLogo} alt="phoneLogo" className={styles.img} />
           Phone: (064) 332-1233
         </div>
-        <div>
-          <img src={locationLogo} alt="locationLogo" />
+        <div className={styles.item}>
+          <img src={locationLogo} alt="locationLogo" className={styles.img} />
           450 Wall Street, USA, New York
         </div>
       </div>

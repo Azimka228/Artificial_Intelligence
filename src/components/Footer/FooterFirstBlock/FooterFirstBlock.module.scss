@@ -1,52 +1,62 @@
 @import "/src/styles/vars";
 @import "/src/styles/fonts.scss";
 
-.logo {
-  position: absolute;
-  top: -18px;
-}
-
 .main {
   max-width: 260px;
-}
 
-.items {
-  display: flex;
-  flex-direction: column;
+  > .logo {
+    position: absolute;
+    top: -18px;
+  }
 
-  & > div {
+  > .label {
+    margin-top: 44px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15.9627px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 22px;
+    color: $blue-color;
+  }
+
+  > .description {
+    margin: 10px 0 37px 0;
+
+    font-family: 'CircularStd', sans-serif;
+    font-size: 14px;
+    font-weight: 450;
+    font-style: normal;
+    line-height: 18px;
+
+    opacity: 0.6;
+  }
+
+  > .cards {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    > .item {
+      display: flex;
+      align-items: center;
+
+      > .img {
+        margin-right: 9px;
+      }
+    }
   }
 
-  & > div > img {
-    margin-right: 9px;
-  }
+  @media only screen and (min-width: 0px) and (max-width: 521px) {
+    & {
 
-  & > div:not(:last-child) {
-    margin-bottom: 20px;
+      > .cards {
+        align-items: center;
+      }
+    }
   }
 }
 
-.label {
-  margin-top: 44px;
 
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15.9627px;
-  font-weight: 600;
-  font-style: normal;
-  line-height: 22px;
-  color: $blue-color;
-}
 
-.description {
-  margin: 10px 0 37px 0;
 
-  font-family: 'CircularStd', sans-serif;
-  font-size: 14px;
-  font-weight: 450;
-  font-style: normal;
-  line-height: 18px;
-
-  opacity: 0.6;
-}
