@@ -8,18 +8,28 @@ export interface IButtonProps
   extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
   children?: ReactNode;
   variant?: 'default' | 'big';
+  className?: string;
 }
 
-const Button: FC<IButtonProps> = ({ variant = 'default', children, ...restProps }) => {
-  const textClassName = cn({
+export const Button: FC<IButtonProps> = ({
+  variant = 'default',
+  children,
+  className,
+  ...restProps
+}) => {
+  const textClassName = cn(styles.textMain, {
     [styles.defaultText]: variant === 'default',
     [styles.bigText]: variant === 'big',
   });
 
-  const buttonClassName = cn(styles.main, {
-    [styles.defaultButton]: variant === 'default',
-    [styles.bigButton]: variant === 'big',
-  });
+  const buttonClassName = cn(
+    styles.main,
+    {
+      [styles.defaultButton]: variant === 'default',
+      [styles.bigButton]: variant === 'big',
+    },
+    className,
+  );
 
   return (
     <button className={buttonClassName} {...restProps} type="button">
@@ -27,5 +37,3 @@ const Button: FC<IButtonProps> = ({ variant = 'default', children, ...restProps 
     </button>
   );
 };
-
-export default Button;

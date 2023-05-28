@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import { IOption, Select } from '../../ui/select/Select';
+import { IOption, Select } from '../../ui/Select';
 import facebookLogo from '../Assets/facebook.svg';
 import instagramLogo from '../Assets/instagram.svg';
 import linkedinLogo from '../Assets/linkedin.svg';

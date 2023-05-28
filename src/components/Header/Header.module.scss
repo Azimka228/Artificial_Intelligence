@@ -6,16 +6,21 @@
   > .headerWrapper {
     display: flex;
     justify-content: space-between;
-    padding: 21px 0 22px 0;
+    padding-top: 21px;
+    padding-bottom: 22px;
+    gap: 20px;
+    flex-wrap: wrap;
 
     > .links {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
 
       .logo {
         display: flex;
         align-items: center;
-        margin-right: 84px;
+        margin-right: 44px;
 
         > .title {
           margin-left: 15px;
@@ -25,6 +30,39 @@
           font-style: normal;
           line-height: 31px;
           color: $blue-color;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 772px) and (max-width: 900px) {
+    & {
+
+      > .headerWrapper {
+        justify-content: center;
+
+        > .links {
+
+          > .logo {
+            margin-right: unset;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 0) and (max-width: 772px) {
+    & {
+
+      > .headerWrapper {
+        justify-content: center;
+
+        > .links {
+          justify-content: center;
+
+          > .logo {
+            margin-right: unset;
+          }
         }
       }
     }

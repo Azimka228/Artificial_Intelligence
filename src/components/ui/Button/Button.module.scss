@@ -1,6 +1,6 @@
 @import '/src/styles/vars';
 
-.main{
+.main {
   cursor: pointer;
 
   padding: 15px 30px 15px 30px;
@@ -10,16 +10,32 @@
   background-color: $blue-color;
   border: unset;
   border-radius: 5px;
-  & > .bigText {
-    font-family: 'Open Sans',sans-serif;
+
+  > .textMain {
+    display: flex;
+    align-items: center;
+  }
+
+  &.defaultButton {
+    height: 52px;
+  }
+
+  &.bigButton {
+    height: 57px;
+  }
+
+
+  > .bigText {
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-weight: 600;
     font-style: normal;
     line-height: 27px;
 
   }
-  & > .defaultText {
-    font-family: 'Open Sans',sans-serif;
+
+  > .defaultText {
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
     font-style: normal;
@@ -27,9 +43,5 @@
 
   }
 }
-.defaultButton{
-  height: 52px;
-}
-.bigButton {
-  height: 57px;
-}
+
+

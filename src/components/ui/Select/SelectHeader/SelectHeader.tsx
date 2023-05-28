@@ -2,7 +2,7 @@ import React, { CSSProperties, FC } from 'react';
 
 import ArrowDownLogo from '../../../../assets/arrow-slide-down.svg';
 import ArrowUpLogo from '../../../../assets/arrow-slide-up.svg';
-import { IOption, PositionType } from '../Select';
+import { IOption, PositionType } from '../index';
 
 interface ISelectHeaderPropsType {
   isOpenMenu: boolean;

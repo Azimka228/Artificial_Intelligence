@@ -2,7 +2,7 @@ import React, { CSSProperties, FC, useState } from 'react';
 
 import cn from 'classnames';
 
-import { IOption } from '../Select';
+import { IOption } from '../index';
 
 import styles from './SelectItem.module.scss';
 

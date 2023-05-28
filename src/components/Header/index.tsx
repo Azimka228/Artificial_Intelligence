@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
 import siteLogo from '../../assets/logo.svg';
-import Button from '../ui/button/Button';
+import { Button } from '../ui';
 import { Wrapper } from '../Wrapper';
 
 import styles from './Header.module.scss';

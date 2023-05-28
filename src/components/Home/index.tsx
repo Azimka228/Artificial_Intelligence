@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import Button from '../ui/button/Button';
+import { Button } from '../ui';
 import { Wrapper } from '../Wrapper';
 
 import firstCompany from './Assets/firstCompany.svg';
@@ -24,9 +24,12 @@ export const Home: FC = () => {
             publishing industries for previewing layouts and visual mockups.
           </div>
           <div className={styles.btns}>
-            <Button variant="big">Get Started</Button>
-            <Button variant="big">
-              <img src={playLogo} alt="playLogo" /> Watch Video
+            <Button variant="big" className={styles.defaultButton}>
+              Get Started
+            </Button>
+            <Button variant="big" className={styles.defaultButton}>
+              <img src={playLogo} alt="playLogo" className={styles.buttonImage} />
+              Watch Video
             </Button>
           </div>
         </div>

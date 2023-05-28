@@ -1,3 +1,4 @@
+export * from './ui';
 export { AboutUs } from './AboutUs';
 export { Blog } from './Blog';
 export { Footer } from './Footer';

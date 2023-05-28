@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import Button from '../ui/button/Button';
+import { Button } from '../ui';
 import { Wrapper } from '../Wrapper';
 
 import styles from './AboutUs.module.scss';

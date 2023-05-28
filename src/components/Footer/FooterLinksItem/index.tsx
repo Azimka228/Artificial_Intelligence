@@ -6,7 +6,7 @@ import styles from './FooterLinksItem.module.scss';
 
 export const FooterLinksItem: FC<FooterLinksDataItem> = ({ title, links }) => {
   const mappedLinks = links.map((el, index) => (
-    <a key={index} href={el.url}>
+    <a key={index} href={el.url} className={styles.item}>
       {el.name}
     </a>
   ));

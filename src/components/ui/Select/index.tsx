@@ -40,13 +40,6 @@ export interface IOption {
   value: string | number;
 }
 
-/**
- *
- * Props:
- * - To add Header use --> Header={true}
- *
- *
- */
 export const Select: FC<ISelectProps> = ({
   options,
   placeholder,
@@ -134,10 +127,10 @@ export const Select: FC<ISelectProps> = ({
     let currentItemId = 0;
 
     if (isOpenItemsMenu) {
-      const test = window.scrollY;
+      const WindowScroll = window.scrollY;
 
       window.onscroll = () => {
-        window.scroll(0, test);
+        window.scroll(0, WindowScroll);
       };
       document.onkeydown = e => {
         const keyCode = e.code;

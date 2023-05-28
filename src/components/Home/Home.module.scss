@@ -5,109 +5,174 @@
   padding: 160px 0 100px 0;
   background-color: #08101E;
 
-}
+  > .homeWrapper {
+    position: relative;
 
-.content {
-  max-width: 604px;
-}
+    > .photo {
+      position: absolute;
+      top: -111px;
+      right: -183px;
 
-.homeWrapper {
-  position: relative;
-}
+      @media only screen and (min-width: 1436px) and (max-width: 1520px) {
+        & {
+          right: -143px;
+        }
+      }
 
+      @media only screen and (min-width: 1336px) and (max-width: 1436px) {
+        & {
+          right: -103px;
+        }
+      }
 
-.photo {
-  position: absolute;
-  top: -111px;
-  right: -183px;
-
-  @media only screen and (min-width: 1436px) and (max-width: 1520px) {
-    & {
-      right: -143px;
+      @media only screen and (min-width: 1236px) and (max-width: 1336px) {
+        & {
+          right: -43px;
+        }
+      }
     }
-  }
 
-  @media only screen and (min-width: 1336px) and (max-width: 1436px) {
-    & {
-      right: -103px;
-    }
-  }
+    > .content {
+      max-width: 604px;
 
-  @media only screen and (min-width: 1236px) and (max-width: 1336px) {
-    & {
-      right: -43px;
+      > .label {
+        position: relative;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 160%;
+        color: $blue-color;
+        text-transform: uppercase;
+      }
+
+      > .title {
+        position: relative;
+        margin: 10px 0 40px 0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 55px;
+        font-weight: 800;
+        font-style: normal;
+        line-height: 130%;
+        color: $default-color;
+      }
+
+      > .description {
+        position: relative;
+        margin-bottom: 50px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 160%;
+        color: $default-color;
+        opacity: 0.7;
+      }
+
+      > .btns {
+        position: relative;
+        display: flex;
+        margin-bottom: 200px;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        > .defaultButton {
+          display: flex;
+          align-items: center;
+
+          > p > .buttonImage {
+            margin-right: 10px;
+          }
+        }
+      }
+
     }
+
+    > .logoCompany {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+
   }
 
   @media only screen and (min-width: 0px) and (max-width: 1236px) {
     & {
-      right: 0;
+
+      > .homeWrapper {
+
+        > .photo {
+          display: none;
+        }
+
+        > .content {
+          max-width: unset;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          > .title {
+            text-align: center;
+          }
+
+          > .description {
+            text-align: center;
+          }
+
+          .btns {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 857px) {
+    & {
+      padding-top: 80px;
+      padding-bottom: 50px;
+
+      > .homeWrapper {
+
+        > .content {
+
+          > .title {
+            font-size: 35px;
+          }
+
+          > .btns {
+            margin-bottom: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 562px) {
+
+  }
+
+  & {
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    > .homeWrapper {
+
+      > .logoCompany {
+       justify-content: center;
+      }
     }
   }
 }
 
-.logoCompany {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.btns {
-  position: relative;
-  display: flex;
-  margin-bottom: 200px;
 
-  & > button > p {
-    display: flex;
-    align-items: center;
-  }
 
-  & > button > p > img {
-    margin-right: 10px;
-  }
 
-  & > button:not(:last-child) {
-    margin-right: 20px;
-  }
-}
 
-.label {
-  position: relative;
 
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  font-style: normal;
-  line-height: 160%;
-  color: $blue-color;
-  text-transform: uppercase;
-}
 
-.title {
-  position: relative;
 
-  margin: 10px 0 40px 0;
-
-  font-family: 'Open Sans', sans-serif;
-  font-size: 55px;
-  font-weight: 800;
-  font-style: normal;
-  line-height: 130%;
-  color: $default-color;
-}
-
-.description {
-  position: relative;
-
-  margin-bottom: 50px;
-
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  font-style: normal;
-  line-height: 160%;
-  color: $default-color;
-
-  opacity: 0.7;
-}
