@@ -37,6 +37,7 @@
 
       > .label {
         position: relative;
+
         font-family: 'Open Sans', sans-serif;
         font-size: 18px;
         font-weight: 600;
@@ -48,7 +49,9 @@
 
       > .title {
         position: relative;
+
         margin: 10px 0 40px 0;
+
         font-family: 'Open Sans', sans-serif;
         font-size: 55px;
         font-weight: 800;
@@ -59,22 +62,27 @@
 
       > .description {
         position: relative;
+
         margin-bottom: 50px;
+
         font-family: 'Open Sans', sans-serif;
         font-size: 18px;
         font-weight: 600;
         font-style: normal;
         line-height: 160%;
         color: $default-color;
+
         opacity: 0.7;
       }
 
       > .btns {
         position: relative;
+
         display: flex;
-        margin-bottom: 200px;
-        gap: 20px;
         flex-wrap: wrap;
+        gap: 20px;
+
+        margin-bottom: 200px;
 
         > .defaultButton {
           display: flex;
@@ -91,12 +99,24 @@
     > .logoCompany {
       display: flex;
       flex-wrap: wrap;
+      gap: 20px;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
     }
 
 
+  }
+
+  & {
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    > .homeWrapper {
+
+      > .logoCompany {
+        justify-content: center;
+      }
+    }
   }
 
   @media only screen and (min-width: 0px) and (max-width: 1236px) {
@@ -109,10 +129,10 @@
         }
 
         > .content {
-          max-width: unset;
           display: flex;
           flex-direction: column;
           align-items: center;
+          max-width: unset;
 
           > .title {
             text-align: center;
@@ -153,18 +173,6 @@
 
   @media only screen and (min-width: 0px) and (max-width: 562px) {
 
-  }
-
-  & {
-    padding-top: 80px;
-    padding-bottom: 50px;
-
-    > .homeWrapper {
-
-      > .logoCompany {
-       justify-content: center;
-      }
-    }
   }
 }
 

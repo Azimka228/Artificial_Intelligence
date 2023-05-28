@@ -29,10 +29,12 @@
       > .textContent {
         position: relative;
         z-index: 2;
-        max-width: 460px;
-        gap: 20px;
+
         display: flex;
         flex-direction: column;
+        gap: 20px;
+
+        max-width: 460px;
 
         > .textContentItem {
           font-family: 'Open Sans', sans-serif;
@@ -59,8 +61,8 @@
 
         > .content {
           display: flex;
-          align-items: center;
           flex-direction: column;
+          align-items: center;
           text-align: center;
         }
 

@@ -5,17 +5,18 @@
 
   > .headerWrapper {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
+
     padding-top: 21px;
     padding-bottom: 22px;
-    gap: 20px;
-    flex-wrap: wrap;
 
     > .links {
       display: flex;
-      align-items: center;
       flex-wrap: wrap;
       gap: 40px;
+      align-items: center;
 
       .logo {
         display: flex;
@@ -24,6 +25,7 @@
 
         > .title {
           margin-left: 15px;
+
           font-family: 'Open Sans', serif;
           font-size: 22.5455px;
           font-weight: 600;

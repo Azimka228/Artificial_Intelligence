@@ -4,6 +4,7 @@
 
   > .footerWrapper {
     position: relative;
+
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -11,6 +12,7 @@
 
 
   }
+
   @media only screen and (min-width: 0px) and (max-width: 1035px) {
     & {
       padding: 57px 0 57px 0;
